@@ -1,0 +1,354 @@
+:root{
+    --main-color:#777;
+    --sec-color:#616161;
+}
+body,html{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--main-color);
+    scroll-behavior: smooth;
+}
+.icons{
+    width: 15px;
+}
+.contaner{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .contaner{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .contaner{
+        width: 950px;
+    }
+}
+@media(min-width:1200px){
+    .contaner{
+        width: 1170px;
+    }
+}
+/* <!-- start nav  --> */
+.nav{
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.nav ul{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.nav ul li{
+    list-style: none;
+    float: left;
+}
+.nav ul a{
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    color: black;
+}
+.nav ul li:last-child{
+    float: right;
+}
+.nav ul a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* <!-- end nav  --> */
+/* start logo */
+.logo{
+    position: relative;
+    opacity: .75;
+}
+.logo-img{
+    width: 100%;
+    background-image: url(../img/parallax1.jpg);
+    height: 50Vh;
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.7);
+}
+.logo-cap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    letter-spacing: 10px;
+    padding: 10px;
+    background-color: black;
+}
+/* end logo */
+/* start about */
+.about{
+    margin-top: 60px ;
+}
+.header{
+    text-align: center;
+}
+.header h2{
+    font-weight: 500;
+}
+.cv{
+    overflow: hidden;
+}
+.card{
+    float: left;
+    text-align: center;
+    width: 35%;
+    padding: 0 10px;
+}
+.card h4 img{
+    margin-right: 10px;
+}
+.card .img-card{
+    width: 100%;
+    opacity: .75;
+}
+.card .img-card:hover{
+    opacity: 1;
+}
+.card-content{
+    width: 45%;
+    padding: 0 5%;
+    float: left;
+}
+.bar{
+    width: 100%;
+    background-color: #aaa;
+}
+.bar div{
+    background-color: var(--sec-color);
+    text-align: center;
+    color: white;
+    padding:4px 8px ;
+}
+.bar .in1{
+    width: 90%;
+
+}
+.bar .in2{
+    width: 85%;
+}
+.bar .in3{
+    width: 75%;
+}
+.scale p{
+    letter-spacing: 10px;
+}
+.section{
+    background-color: var(--sec-color);
+    margin-top: 60px;
+}
+.main-sec{
+    display: grid;
+    /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+.main-sec div{
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width: 650px) {
+    .main-sec{
+        /* grid-template-columns: repeat(1, minmax(150px, 1fr)); */
+        grid-template-columns: auto;
+
+    }
+  }
+/* end about */
+/* start protfolio */
+.mywork{
+    margin: 40px 0;
+}
+.prot{
+    height: 50vh;
+    position: relative;
+    opacity: .75;
+}
+.protfolio{
+    background-image: url(../img/parallax2.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.prot-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: xx-large;
+    letter-spacing: 10px;
+    font-size: 36px;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 10px));
+    gap: 10px 10px;
+}
+.photos div img{
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+}
+.photos div img:hover{
+    filter: opacity(0.75) ;
+}
+@media only screen and (max-width: 650px) {
+    .photos{
+        /* grid-template-columns: repeat(1, minmax(150px, 1fr)); */
+        grid-template-columns: auto;
+
+    }
+  }
+  .mywork input{
+    padding: 12px 24px;
+    display: block;
+    margin: 50px auto 0;
+    border: 0;
+    font-size: 16px;
+    background-color: #aaaa;
+  }
+  .mywork input:hover{
+    background-color: var(--main-color);
+  }
+/* end protfolio */
+/* start contact */
+.main-contact{
+    margin: 60px 0;
+}
+.contact{
+    position:relative;
+    margin-bottom: 40px;
+}
+.contact-img{
+    background-image: url(../img/parallax3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    opacity: 0.75;
+    width: 100%;
+}
+.contact-img div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 10px;
+    font-size: 36px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 33% auto;
+    gap: 10px;
+}
+.content .img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.all-info{
+    padding: 25px;
+    font-size: 18px;
+}
+.info img{
+    margin-right: 10px;
+}
+.inputs  .half .half-in{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.inputs .half div:last-child{
+    padding-left: 8px;
+}
+.inputs  .half .half-in input{
+    width: 100%;
+}
+.inputs .full input{
+    width: 100%;
+    margin-top: 10px;
+}
+.in{
+    padding: 12px;
+    margin: 0;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+}
+.button{
+    float: right;
+    margin-top: 10px;
+}
+.button button{
+    padding: 8px 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.button button:hover{
+background-color: #aaa;
+color: black;
+}
+/* end contact */
+/* start footer  */
+.footer{
+    background-color: var(--sec-color);
+    text-align: center;
+    padding: 40px 0px;
+}
+.footer button{
+    background-color: black;
+    padding: 0px;
+    border: 0;
+    margin-bottom: 10px;
+
+}
+.footer button a{
+    text-decoration: none;
+    color: white;
+    padding: 11px 16px;
+    font-size: 15px;
+    display: block;
+}
+.footer button a:hover{
+    background-color: var(--main-color); 
+}
+.footer button img{
+    width: 10px;
+    margin-right: 5px;
+}
+.footer p{
+    color: white;
+}
+.power{
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+}
+.links a img{
+    WIDTH: 20px;
+    margin: 0 1px;
+}
+.links  a:hover{
+    filter: drop-shadow(2px 4px 6px black);
+}
+.power:hover{
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+/* end footer  */
